@@ -1,0 +1,94 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/index/tab-mine",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false
+			}
+		}
+	],
+	"subPackages": [{
+			"root": "pages/tabBarA",
+			"pages": [{
+				"path": "tabBarA",
+				"style": {
+					"navigationBarTitleText": "我的",
+					"enablePullDownRefresh": false
+				}
+			}]
+		},
+		{
+			"root": "pages/tabBarB",
+			"pages": [{
+				"path": "tabBarB",
+				"style": {
+					"navigationBarTitleText": "我的",
+					"enablePullDownRefresh": false
+				}
+			}]
+		},
+		{
+			"root": "pages/tabBarC",
+			"pages": [{
+				"path": "tabBarC",
+				"style": {
+					"navigationBarTitleText": "我的",
+					"enablePullDownRefresh": false
+				}
+			}]
+		},
+		{
+			"root": "pages/tabBarD",
+			"pages": [{
+				"path": "tabBarD",
+				"style": {
+					"navigationBarTitleText": "我的",
+					"enablePullDownRefresh": false
+				}
+			}]
+		}
+	],
+	"tabBar": {
+		"color": "#8a8a8a",
+		"selectedColor": "#00aa00",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/logo.png",
+				"selectedIconPath": "static/logo.png"
+			},
+			{
+				"pagePath": "pages/index/tab-mine",
+				"text": "我的",
+				"iconPath": "static/logo.png",
+				"selectedIconPath": "static/logo.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+		//使用自定义头部
+		// "navigationStyle": "custom"
+	},
+	"permission": {
+		/* 小程序在这里设置定位没效果，必须在manifest.json中设置 */
+		// "scope.userLocation": {
+		//   "desc": "获取用户当前位置"  
+		// }
+	}
+}

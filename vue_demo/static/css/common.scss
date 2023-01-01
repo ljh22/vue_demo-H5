@@ -1,0 +1,217 @@
+page{
+	width:100%; 
+	background-color: #F5F6FA;
+	font-size: 28upx;
+	overflow-x: hidden;
+	color:#24282E; 
+	font-family: "PingFang SC", Arial, "Microsoft YaHei", sans-serif;  
+}
+
+// 溢出显示点
+.hidderd {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.scroll-y{
+	overflow-y: scroll;
+}
+.scroll-x{
+	overflow-x: scroll;
+	white-space: nowrap;  
+}
+.overflow-hidden{
+	overflow: hidden;
+}
+.bold{
+	font-weight: 700;
+}
+
+ /**圆角**/
+ .round{
+ 	 border-radius: 5000px;
+ }
+
+ /*上下边框*/
+ .border-top{
+	 border-top: 1upx solid #f2f2f2;
+ }
+ .border-bottom{
+	 border-bottom: 1upx solid #f2f2f2;
+ }
+ // /*隐藏滚动条*/
+ // ::-webkit-scrollbar {  
+ //     display: none;  
+ //     width: 0 !important;  
+ //     height: 0 !important;  
+ //     -webkit-appearance: none;  
+ //     background: transparent;  
+ // }
+ 
+
+/* 字体颜色或背景色 */
+ .text-red{//嫣红
+	 color: #E40202;
+ }
+ .bg-red{
+	 background-color: #E40202;color:#FFF;
+ } 
+ .text-orange{//桔橙
+	 color: #FF5C00;
+ }
+ .bg-orange{
+	background-color: #FF5C00;color: #fff;
+ }
+ .text-yellow{//明黄
+	 color: #fbbd08;
+ }
+ .bg-yellow{
+	 background-color: #fbbd08;color: #fff;
+ }
+ .text-olive{//橄榄绿
+	 color: #8dc63f;
+ }
+ .bg-olive{
+	 background-color: #8dc63f;color: #fff;
+ }
+ //森绿
+ .text-green{
+	 color: #33AE2A;
+ }
+ .bg-green{
+	 background-color: #33AE2A;color: #fff;
+ }
+ //海蓝
+ .text-blue{
+	 color:#49A4DC;
+ }
+ .bg-blue{
+	 background-color: #49A4DC;color: #fff;
+ }
+ .text-cyan{//天青
+	 color: #1BA19E;
+ }
+ .bg-cyan{
+	 background-color: #1BA19E;color: #fff;
+ }
+ .text-purple{//姹紫
+	 color: #6739b6;
+ }
+ .bg-purple{
+	 background-color: #6739b6;color: #fff;
+ }
+ .text-pink{//桃粉
+	 color: #e03997;
+ }
+ .bg-pink{
+	 background-color: #e03997;color: #fff;
+ }
+ .text-brown{//棕褐
+	 color: #a5673f;
+ }
+ .bg-brown{
+	 background-color: #a5673f;color: #fff;
+ }
+ .text-grey{//玄灰
+	 color: #8799a3;
+ }
+ .bg-grey{
+	 background-color: #8799a3;color: #fff;
+ }
+ .text-gray{//灰色
+	 color: #999999;
+ }
+ .bg-gray{
+	 background-color: #999999;
+ }
+ .text-white{
+	 color: #fff;
+ }
+ .bg-white{
+	 background-color: #fff;
+ }
+
+
+ /* 按钮尺寸 */
+ .btn{
+	height:67upx;
+	line-height: 67upx;
+	text-align: center;	 
+	border-radius: 7rpx;
+ } 
+ .btn-s{
+ 	height: 57upx;
+ 	line-height:57upx;
+ 	text-align: center;	
+	border-radius: 7rpx;
+ }
+ .btn-l{
+ 	height: 80upx;
+ 	line-height: 80upx;
+ 	text-align: center;
+	border-radius: 7rpx;
+ } 
+ .btn-xl{
+ 	height: 100upx;
+ 	line-height: 100upx;
+ 	text-align: center;	
+ } 
+ 
+ /* display */
+ .hide{
+ 	display: none!important;
+ }
+ 
+ .inline-flex{
+ 	display: inline-flex!important;vertical-align: top;
+ } 
+ .inline{
+ 	display: inline-block!important;vertical-align: top;
+ }
+ .uflex{
+	display: flex;
+	justify-content: flex-start; 
+	flex-direction:row;
+	align-items: flex-start;
+ } 
+ .flex-between{
+	 justify-content: space-between;
+	 align-items: center;
+ }
+ .flex-start{
+	 justify-content: flex-start;
+	 align-items: center;
+ }
+ .flex-end{
+ 	 justify-content: flex-end;
+ 	 align-items: center;
+ }	
+
+
+
+/* #ifndef APP-NVUE */
+/* 阴影效果 */
+.box-shadow-1{
+	box-shadow: 0px 1rpx 5rpx 0px rgba(0, 0, 0, 0.15);
+} 
+.u-text-center{
+	text-align: center;
+}
+.u-text-right{
+	text-align: right;
+}
+.u-text-left{
+	text-align: left;
+}
+@for $i from 0 through 30 {
+	// 圆角 只要能被5除尽的数
+	@if $i % 5 == 0 { 
+		// 得出：radius-0或者radius-30
+		.radius-#{$i}{
+			border-radius: $i + rpx!important;
+		} 
+	}
+}
+/* #endif */
+
